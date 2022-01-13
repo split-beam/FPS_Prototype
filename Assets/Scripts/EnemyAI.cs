@@ -26,4 +26,8 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, ChaseRange);
+    }
 }
