@@ -305,7 +305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f17fd7a236bec48b5da527c864bfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   damage: 40
 --- !u!195 &4793660523991172413
 NavMeshAgent:
@@ -342,7 +341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  ChaseRange: 10
+  ChaseRange: 15
+  turnSpeed: 5
 --- !u!95 &6128716939827991169
 Animator:
   serializedVersion: 3
