@@ -182,7 +182,6 @@ GameObject:
   - component: {fileID: 11400004}
   - component: {fileID: 4157074166924523441}
   - component: {fileID: 6746673377077117545}
-  - component: {fileID: 1504926101132678439}
   - component: {fileID: 2819301027968391360}
   m_Layer: 0
   m_Name: Player
@@ -331,23 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverCanvas: {fileID: 0}
---- !u!114 &1504926101132678439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 123b27225418c624fb069c41c39f50fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPScamera: {fileID: 0}
-  zoomOutFOV: 60
-  zoomInFOV: 20
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
 --- !u!114 &2819301027968391360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13cdbed06d6d3a4b8c7d92cebe8358e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoAmount: 100
 --- !u!1 &8874194865610992851
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5447479980127104349}
     m_Modifications:
+    - target: {fileID: 1690084562377497168, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: damage
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 1690084562377497168, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: FPCamera
       value: 
@@ -457,6 +443,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carbine
       objectReference: {fileID: 0}
+    - target: {fileID: 8992727369770781821, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: FPScamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 8992727369770781821, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 11400004}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
 --- !u!4 &3857853905002493159 stripped
@@ -471,6 +465,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5447479980127104349}
     m_Modifications:
+    - target: {fileID: 1690084562377497168, guid: 79546108420bcbf45bccf0c8e5c70e5f, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1690084562377497168, guid: 79546108420bcbf45bccf0c8e5c70e5f, type: 3}
       propertyPath: FPCamera
       value: 
@@ -521,6 +519,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 79546108420bcbf45bccf0c8e5c70e5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199744, guid: 79546108420bcbf45bccf0c8e5c70e5f, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158997199750, guid: 79546108420bcbf45bccf0c8e5c70e5f, type: 3}
@@ -596,6 +598,10 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: 7ae08107120ef95459b8c19a2c894255, type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199758, guid: 7ae08107120ef95459b8c19a2c894255, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae08107120ef95459b8c19a2c894255, type: 3}
